@@ -15,6 +15,7 @@
 		BD8F94B329C8A61A00394BD3 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94B229C8A61A00394BD3 /* HelpView.swift */; };
 		BD8F94B529C8A74E00394BD3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94B429C8A74E00394BD3 /* GameView.swift */; };
 		BD8F94B729C8A7A400394BD3 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94B629C8A7A400394BD3 /* EndGameView.swift */; };
+		BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		BD8F94B229C8A61A00394BD3 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		BD8F94B429C8A74E00394BD3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BD8F94B629C8A7A400394BD3 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
+		BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jura-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BD8F94C429D45E2900394BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 		BD8F949F29C8A00800394BD3 /* FisioDance */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F94C429D45E2900394BD3 /* Info.plist */,
+				BD8F94C029D45D2B00394BD3 /* font */,
 				BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */,
 				BD8F94B229C8A61A00394BD3 /* HelpView.swift */,
 				BD8F94A229C8A00800394BD3 /* ContentView.swift */,
@@ -77,6 +82,14 @@
 				BD8F94A729C8A00900394BD3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD8F94C029D45D2B00394BD3 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +152,7 @@
 			files = (
 				BD8F94A829C8A00900394BD3 /* Preview Assets.xcassets in Resources */,
 				BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */,
+				BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +300,7 @@
 				DEVELOPMENT_TEAM = Z4T4DUM2DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FisioDance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +330,7 @@
 				DEVELOPMENT_TEAM = Z4T4DUM2DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FisioDance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
