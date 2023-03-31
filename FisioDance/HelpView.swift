@@ -15,6 +15,7 @@ struct HelpView: View {
                 NavigationLink(destination: ContentView()){
                     Text("Voltar para home")
                         .font(.custom("Jura", size: 30))
+                        .foregroundColor(Color("dark-pink60"))
                 }
                 
             }
