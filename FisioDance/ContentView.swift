@@ -4,24 +4,69 @@
 //
 //  Created by sofiadinizms on 20/03/23.
 //
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-
-            VStack {
-                NavigationLink(destination: GamesListView()){
-                    Text("Play")
-                        .padding(20)
+            ZStack(alignment: .center) {
+                
+                GeometryReader { geo in
+                    Image("Home-screen")
+                        .resizable()
+                        .scaledToFill()
+                        .scaleEffect(1.04)
+                        .clipped()
+                        .frame(width: geo.size.width, height: geo.size.height+65)
+                        .edgesIgnoringSafeArea(.all)
                 }
                 
-                NavigationLink(destination: HelpView()){
-                    Text("Ajuda")
+                VStack(alignment: .center) {
+                    Image("logo")
+                        .padding(.bottom, 40)
+                    
+                    Button(action: {
+                        
+                    }) {
+                        NavigationLink(destination: GamesListView()){
+                            ZStack{
+                                Image("primary")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 248, height: 80)
+                                Text("Iniciar")
+                                    .font(.custom("Jura", size: 30))
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding(.bottom, 12)
+                            }
+                            
+                        }
+                    }
+                    Button(action: {
+                        
+                    }) {
+                        NavigationLink(destination: HelpView()){
+                            ZStack{
+                                Text("Ajuda")
+                                    .font(.custom("Jura", size: 27))
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding(.bottom, 10)
+                                
+                                Image("secondary")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 248, height: 80)
+                            }
+                            
+                        }
+                    }
+                    
                 }
+                
             }
-            
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         }
         .navigationTitle("Home")
     }
