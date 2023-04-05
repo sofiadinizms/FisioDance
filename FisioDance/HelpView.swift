@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HelpView: View {
+    
+    let feedbackManager = FeedbackManager.shared
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -15,6 +18,7 @@ struct HelpView: View {
                 NavigationLink(destination: ContentView()){
                     Text("Voltar para home")
                         .font(.custom("Jura", size: 30))
+                    Text(feedbackManager.feedback?.emoji ?? "Não selecionou")
                 }
                 
             }
