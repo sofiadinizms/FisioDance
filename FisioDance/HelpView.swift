@@ -18,7 +18,7 @@ struct HelpView: View {
                 NavigationLink(destination: ContentView()){
                     Text("Voltar para home")
                         .font(.custom("Jura", size: 30))
-                    Text(feedbackManager.feedback?.emoji ?? "Não selecionou")
+                        .foregroundColor(Color("dark-pink60"))
                 }
                 
             }
