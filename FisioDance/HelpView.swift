@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HelpView: View {
+    
+    let feedbackManager = FeedbackManager.shared
+    
     var body: some View {
         NavigationStack{
             VStack{
