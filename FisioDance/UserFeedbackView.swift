@@ -45,8 +45,10 @@ struct UserFeedbackView: View {
     
     var body: some View {
         VStack {
-            Text("Qual foi seu nível de dificuldade em realizar este exercício?")
-                .font(.title)
+//            Text("Qual foi seu nível de dificuldade em realizar este exercício?")
+//                //.font(.title2)
+//                .font(.custom("Jura", size: 24))
+//                .foregroundColor(Color("dark-blue90"))
             
             HStack {
                 ForEach(Feedback.allCases, id: \.self) { feedback in
@@ -78,7 +80,7 @@ struct FeedbackButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(selectedFeedback == feedback ? Color.blue : Color.gray)
+            .background(selectedFeedback == feedback ? Color("dark-blue90") : Color("light-blue20"))
             .cornerRadius(10)
     }
 }
