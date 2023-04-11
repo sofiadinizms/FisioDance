@@ -40,8 +40,42 @@ struct HelpView: View {
                             .foregroundColor(Color(red: 10/255, green: 132/255, blue: 178/255))
                             .fontWeight(.bold)
                     }
+                    //Definições de texto na detail mas que não estão sendo usadas
+                    
+                    VStack {
+                        Image(uiImage: selected.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .edgesIgnoringSafeArea(.all)
+                        
+                        //HStack {
+                            Image(uiImage: selected.image2)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .edgesIgnoringSafeArea(.all)
+                            //.frame(width: 600, height: 631)
+                            
+                            Image(uiImage: selected.image3)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .edgesIgnoringSafeArea(.all)
+                            //.frame(width: 600, height: 631)
+                        //}
+                        .frame(alignment: .topTrailing)
+                    }
                 }
-                .navigationBarTitle(selected.name)
+                //.navigationTitle(selected.name)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Text(selected.name).font(.custom("Jura", size: 39))
+                                .foregroundColor(Color(red: 10/255, green: 132/255, blue: 178/255))
+                                .fontWeight(.bold)
+                        }
+                    }
+                }
+                .background(Color(red: 215/255, green: 244/255, blue: 1))
                 
             } else {
                 Text("Escolha ao lado")
@@ -56,9 +90,25 @@ struct HelpView: View {
                     .background(Color(red: 215/255, green: 244/255, blue: 1))
             }
         }
-        .navigationTitle("Ajuda") //nessa posição, o título fica no centro superior da detail.
+        //.navigationTitle("Ajuda") //nessa posição, o título fica no centro superior da detail.
         .accentColor(Color(red: 215/255, green: 244/255, blue: 1))
     }
+}
+
+struct NavigationConfigurator: UIViewControllerRepresentable {
+    
+    var configure: (UINavigationController) -> Void = { _ in }
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
+        UIViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
+        if let nc = uiViewController.navigationController {
+            self.configure(nc)
+        }
+    }
+    
 }
 
 struct HelpView_Previews: PreviewProvider {
@@ -71,14 +121,18 @@ struct HelpItems: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let details: String
+    let image: UIImage
+    let image2: UIImage
+    let image3: UIImage
 }
 
 extension HelpItems {
     static var exampleData: [HelpItems] {
         [
-            .init(name: "Título 1", details: "Infos da página de Título 1"),
-            .init(name: "Título 2", details: "Infos da página de Título 2"),
-            .init(name: "Título 3", details: "Infos da página de Título 3"),
+            .init(name: "Tela de início", details: "", image: UIImage(imageLiteralResourceName: "home-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Escolha de exercícios", details: "", image: UIImage(imageLiteralResourceName: "level-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Tela de jogo", details: "", image: UIImage(imageLiteralResourceName: "play-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Fim de jogo", details: "", image: UIImage(imageLiteralResourceName: "start-game"), image2: UIImage(imageLiteralResourceName: "exit-game"), image3: UIImage(imageLiteralResourceName: "end-game")),
         ]
     }
 }

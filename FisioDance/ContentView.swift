@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationStack{
-
+            
             VStack {
                 NavigationLink(destination: GamesListView()){
                     Text("Play")
                         .padding(20)
                 }
-                
                 NavigationLink(destination: HelpView()){
                     Text("Ajuda")
                 }
@@ -25,6 +25,7 @@ struct ContentView: View {
         }
         .navigationTitle("Home")
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
