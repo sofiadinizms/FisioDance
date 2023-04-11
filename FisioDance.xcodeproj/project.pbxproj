@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BD2D5F0429DD97D80029C088 /* PoseDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2D5F0329DD97D80029C088 /* PoseDetection.swift */; };
-		BD817FB629E3D44A00123540 /* cameraApp in Resources */ = {isa = PBXBuildFile; fileRef = BD817FB529E3D44A00123540 /* cameraApp */; };
 		BD817FCF29E3D70600123540 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FC529E3D58D00123540 /* ARModel.swift */; };
-		BD817FD029E3D72000123540 /* exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCA29E3D58D00123540 /* exercise.swift */; };
-		BD817FD129E3D72000123540 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCB29E3D58D00123540 /* WebView.swift */; };
+		BD817FD029E3D72000123540 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCA29E3D58D00123540 /* ExerciseModel.swift */; };
+		BD817FD129E3D72000123540 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCB29E3D58D00123540 /* GifImage.swift */; };
 		BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCC29E3D58D00123540 /* AppDelegate.swift */; };
 		BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCE29E3D58D00123540 /* ARViewModel.swift */; };
+		BD817FD729E5D5EB00123540 /* a.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FD629E5D5EB00123540 /* a.gif */; };
+		BD817FE029E5E98200123540 /* d.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FD829E5E98200123540 /* d.gif */; };
+		BD817FE129E5E98200123540 /* i.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FD929E5E98200123540 /* i.gif */; };
+		BD817FE229E5E98200123540 /* e.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDA29E5E98200123540 /* e.gif */; };
+		BD817FE329E5E98200123540 /* f.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDB29E5E98200123540 /* f.gif */; };
+		BD817FE429E5E98200123540 /* g.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDC29E5E98200123540 /* g.gif */; };
+		BD817FE529E5E98200123540 /* h.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDD29E5E98200123540 /* h.gif */; };
+		BD817FE629E5E98200123540 /* b.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDE29E5E98200123540 /* b.gif */; };
+		BD817FE729E5E98200123540 /* c.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FDF29E5E98200123540 /* c.gif */; };
 		BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */; };
 		BD8F94A329C8A00800394BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A229C8A00800394BD3 /* ContentView.swift */; };
 		BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94A429C8A00900394BD3 /* Assets.xcassets */; };
@@ -29,27 +37,20 @@
 
 /* Begin PBXFileReference section */
 		BD2D5F0329DD97D80029C088 /* PoseDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetection.swift; sourceTree = "<group>"; };
-		BD817FB529E3D44A00123540 /* cameraApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cameraApp; sourceTree = "<group>"; };
-		BD817FB829E3D58800123540 /* pokeball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pokeball.gif; sourceTree = "<group>"; };
-		BD817FB929E3D58800123540 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
-		BD817FBA29E3D58800123540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BD817FBC29E3D58800123540 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD817FBD29E3D58800123540 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		BD817FBE29E3D58800123540 /* exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise.swift; sourceTree = "<group>"; };
-		BD817FBF29E3D58800123540 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		BD817FC029E3D58800123540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD817FC129E3D58800123540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BD817FC229E3D58800123540 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
-		BD817FC429E3D58D00123540 /* pokeball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pokeball.gif; sourceTree = "<group>"; };
 		BD817FC529E3D58D00123540 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
-		BD817FC629E3D58D00123540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BD817FC829E3D58D00123540 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD817FC929E3D58D00123540 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		BD817FCA29E3D58D00123540 /* exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise.swift; sourceTree = "<group>"; };
-		BD817FCB29E3D58D00123540 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BD817FCA29E3D58D00123540 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		BD817FCB29E3D58D00123540 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		BD817FCC29E3D58D00123540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD817FCD29E3D58D00123540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD817FCE29E3D58D00123540 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		BD817FD629E5D5EB00123540 /* a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = a.gif; sourceTree = "<group>"; };
+		BD817FD829E5E98200123540 /* d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = d.gif; sourceTree = "<group>"; };
+		BD817FD929E5E98200123540 /* i.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = i.gif; sourceTree = "<group>"; };
+		BD817FDA29E5E98200123540 /* e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = e.gif; sourceTree = "<group>"; };
+		BD817FDB29E5E98200123540 /* f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = f.gif; sourceTree = "<group>"; };
+		BD817FDC29E5E98200123540 /* g.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g.gif; sourceTree = "<group>"; };
+		BD817FDD29E5E98200123540 /* h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = h.gif; sourceTree = "<group>"; };
+		BD817FDE29E5E98200123540 /* b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b.gif; sourceTree = "<group>"; };
+		BD817FDF29E5E98200123540 /* c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = c.gif; sourceTree = "<group>"; };
 		BD8F949D29C8A00800394BD3 /* FisioDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisioDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisioDanceApp.swift; sourceTree = "<group>"; };
 		BD8F94A229C8A00800394BD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		BD8F94C429D45E2900394BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD98DB9629E278AA0073C2AA /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifier.mlmodel; sourceTree = "<group>"; };
-		BD98DB9C29E28A630073C2AA /* GameScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = GameScene.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,52 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD817FB729E3D58800123540 /* cameraApp */ = {
-			isa = PBXGroup;
-			children = (
-				BD817FB829E3D58800123540 /* pokeball.gif */,
-				BD817FB929E3D58800123540 /* ARModel.swift */,
-				BD817FBA29E3D58800123540 /* Assets.xcassets */,
-				BD817FBB29E3D58800123540 /* Preview Content */,
-				BD817FBD29E3D58800123540 /* Experience.rcproject */,
-				BD817FBE29E3D58800123540 /* exercise.swift */,
-				BD817FBF29E3D58800123540 /* WebView.swift */,
-				BD817FC029E3D58800123540 /* AppDelegate.swift */,
-				BD817FC129E3D58800123540 /* ContentView.swift */,
-				BD817FC229E3D58800123540 /* ARViewModel.swift */,
-			);
-			name = cameraApp;
-			path = cameraApp/cameraApp;
-			sourceTree = "<group>";
-		};
-		BD817FBB29E3D58800123540 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				BD817FBC29E3D58800123540 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BD817FC329E3D58D00123540 /* cameraApp */ = {
-			isa = PBXGroup;
-			children = (
-				BD817FC629E3D58D00123540 /* Assets.xcassets */,
-				BD817FC729E3D58D00123540 /* Preview Content */,
-				BD817FC929E3D58D00123540 /* Experience.rcproject */,
-				BD817FCD29E3D58D00123540 /* ContentView.swift */,
-			);
-			name = cameraApp;
-			path = cameraApp/cameraApp;
-			sourceTree = "<group>";
-		};
-		BD817FC729E3D58D00123540 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				BD817FC829E3D58D00123540 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		BD8F949429C8A00800394BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -151,19 +105,23 @@
 				BD8F94B029C8A47B00394BD3 /* GamesListView.swift */,
 				BD8F94B629C8A7A400394BD3 /* EndGameView.swift */,
 				BD2D5F0329DD97D80029C088 /* PoseDetection.swift */,
-				BD98DB9C29E28A630073C2AA /* GameScene.rcproject */,
 				BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */,
-				BD817FC429E3D58D00123540 /* pokeball.gif */,
+				BD817FD629E5D5EB00123540 /* a.gif */,
+				BD817FDE29E5E98200123540 /* b.gif */,
+				BD817FDF29E5E98200123540 /* c.gif */,
+				BD817FD829E5E98200123540 /* d.gif */,
+				BD817FDA29E5E98200123540 /* e.gif */,
+				BD817FDB29E5E98200123540 /* f.gif */,
+				BD817FDC29E5E98200123540 /* g.gif */,
+				BD817FDD29E5E98200123540 /* h.gif */,
+				BD817FD929E5E98200123540 /* i.gif */,
 				BD8F94B429C8A74E00394BD3 /* GameView.swift */,
 				BD817FC529E3D58D00123540 /* ARModel.swift */,
-				BD817FCA29E3D58D00123540 /* exercise.swift */,
-				BD817FCB29E3D58D00123540 /* WebView.swift */,
-				BD817FCC29E3D58D00123540 /* AppDelegate.swift */,
 				BD817FCE29E3D58D00123540 /* ARViewModel.swift */,
-				BD817FC329E3D58D00123540 /* cameraApp */,
+				BD817FCA29E3D58D00123540 /* ExerciseModel.swift */,
+				BD817FCB29E3D58D00123540 /* GifImage.swift */,
+				BD817FCC29E3D58D00123540 /* AppDelegate.swift */,
 				BD8F94A429C8A00900394BD3 /* Assets.xcassets */,
-				BD817FB529E3D44A00123540 /* cameraApp */,
-				BD817FB729E3D58800123540 /* cameraApp */,
 				BD8F94A629C8A00900394BD3 /* Preview Content */,
 			);
 			path = FisioDance;
@@ -243,10 +201,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD817FE729E5E98200123540 /* c.gif in Resources */,
+				BD817FE629E5E98200123540 /* b.gif in Resources */,
+				BD817FE129E5E98200123540 /* i.gif in Resources */,
 				BD8F94A829C8A00900394BD3 /* Preview Assets.xcassets in Resources */,
+				BD817FE029E5E98200123540 /* d.gif in Resources */,
+				BD817FE529E5E98200123540 /* h.gif in Resources */,
 				BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */,
+				BD817FD729E5D5EB00123540 /* a.gif in Resources */,
 				BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */,
-				BD817FB629E3D44A00123540 /* cameraApp in Resources */,
+				BD817FE429E5E98200123540 /* g.gif in Resources */,
+				BD817FE229E5E98200123540 /* e.gif in Resources */,
+				BD817FE329E5E98200123540 /* f.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +233,8 @@
 				BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */,
 				BD2D5F0429DD97D80029C088 /* PoseDetection.swift in Sources */,
 				BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */,
-				BD817FD029E3D72000123540 /* exercise.swift in Sources */,
-				BD817FD129E3D72000123540 /* WebView.swift in Sources */,
+				BD817FD029E3D72000123540 /* ExerciseModel.swift in Sources */,
+				BD817FD129E3D72000123540 /* GifImage.swift in Sources */,
 				BD8F94B729C8A7A400394BD3 /* EndGameView.swift in Sources */,
 				BD8F94B529C8A74E00394BD3 /* GameView.swift in Sources */,
 			);
