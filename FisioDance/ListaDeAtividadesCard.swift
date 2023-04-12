@@ -26,18 +26,33 @@ struct ListaDeAtividadesCard: View {
                 Spacer()
                     .frame(width: 40)
                 
+                
                 VStack{
-                    Text(exercicio.title)
-                        .font(.custom("Jura", size: 32))
-                        .foregroundColor(Color("dark-blue90"))
-                    Text("Duração: \(exercicio.duration)")
-                        .font(.custom("Jura", size: 22))
-                        .foregroundColor(Color("dark-blue90"))
-                    Text(exercicio.subtitle)
-                        .font(.custom("Jura", size: 20))
-                        .foregroundColor(Color("dark-blue90"))
+                    VStack{
+                        Text(exercicio.title)
+                            .font(.custom("Jura", size: 32))
+                            .foregroundColor(Color("dark-blue90"))
+                            //.padding(.trailing, 80)
+                            .frame(width: 362, alignment: .leading)
+                        Text("Duração: \(exercicio.duration)")
+                            .font(.custom("Jura", size: 22))
+                            .foregroundColor(Color("dark-blue90"))
+                            .frame(width: 362, alignment: .leading)
+                        Text(exercicio.subtitle)
+                            .font(.custom("Jura", size: 20))
+                            .foregroundColor(Color("dark-blue90"))
+                            .frame(width: 362, height: 58, alignment: .leading)
+                            .padding(.top, -20)
+                            .lineLimit(2)
+                        
+                    }
+                    .frame(width: 362, height: 140)
+                    .padding(.bottom)
+                    .border(.red)
+                    
                     
                     HStack{
+        
                         Button(action: {
                             //action here
                         }){
@@ -54,11 +69,11 @@ struct ListaDeAtividadesCard: View {
                         Spacer()
                         
                             ZStack {
-                                if feedbackManager.feedback?.emoji != "" {
+                                if feedbackManager.emojiToInt?.emoji != "" {
                                     Image("fav-icon")
                                 }
                                 
-                                Text(feedbackManager.feedback?.emoji ?? "")
+                                Text(feedbackManager.emojiToInt?.emoji ?? "")
                                     .padding(.bottom, 5)
                                     .padding(.trailing,5)
                                     .font(.custom("Jura", size: 26))
@@ -66,8 +81,10 @@ struct ListaDeAtividadesCard: View {
                         //}
                        
                     }
+                    .frame(height: 70)
                 }
                 .frame(width: 362,height: 225, alignment: .leading)
+                //.border(.black)
                 
             }
             .padding(.leading,32)
