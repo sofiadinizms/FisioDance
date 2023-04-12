@@ -14,7 +14,8 @@ import Vision
 
 class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
     @Published private var model : ARModel = ARModel()
-    //let handModel = try? VNCoreMLModel(for: HandPoseClassifier(configuration: MLModelConfiguration()).model)
+    
+    
     let handModel = try! HandPoseClassifier(configuration: MLModelConfiguration())
     
     var frameCount: Int = 0
@@ -50,44 +51,46 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
         model.updateHeadTilt()
         frameCount += 1
-        print("FOIFOIFOIFOIFOIFOIFOI2")
         
-        let pixelBuffer = frame.capturedImage
         
-        let handPoseRequest = VNDetectHumanHandPoseRequest()
-        handPoseRequest.maximumHandCount = 2
-        handPoseRequest.revision = VNDetectHumanHandPoseRequestRevision1
-        
-        let request = VNDetectHumanBodyPoseRequest()
-        
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
-        
-        do {
-            try handler.perform([request, handPoseRequest])
-        } catch {
-            assertionFailure("Human Pose Request Failed: \(error)")
+        if frameCount % 5 == 0 {
+            let pixelBuffer = frame.capturedImage
+            
+            let handPoseRequest = VNDetectHumanHandPoseRequest()
+            handPoseRequest.maximumHandCount = 2
+            handPoseRequest.revision = VNDetectHumanHandPoseRequestRevision1
+            
+            let request = VNDetectHumanBodyPoseRequest()
+            
+            let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
+            
+            do {
+                try handler.perform([request, handPoseRequest])
+            } catch {
+                assertionFailure("Human Pose Request Failed: \(error)")
+            }
+            
+            
+            if let handPoses = handPoseRequest.results,
+               !handPoses.isEmpty,
+               let handObservation = handPoses.first,
+               frameCount % Int(handObservation.confidence) == 0 {
+                
+                guard let keypointsMultiArray = try? handObservation.keypointsMultiArray() else { fatalError() }
+                
+                do{
+                    let handPosePrediction = try handModel.prediction(poses: keypointsMultiArray)
+                    let confidence = handPosePrediction.labelProbabilities[handPosePrediction.label]!
+                    
+                    if confidence > 0.8 {
+                        print("\(handPosePrediction.label)")
+                    }
+                    
+                } catch {
+                    print(error)
+                }
         }
         
-        print("†á na função")
-        
-        if let handPoses = handPoseRequest.results,
-           !handPoses.isEmpty,
-           let handObservation = handPoses.first,
-           frameCount % Int(handObservation.confidence) == 0 {
-            
-            guard let keypointsMultiArray = try? handObservation.keypointsMultiArray() else { fatalError() }
-            
-            do{
-                let handPosePrediction = try handModel.prediction(poses: keypointsMultiArray)
-                let confidence = handPosePrediction.labelProbabilities[handPosePrediction.label]!
-
-                if confidence > 0.8 {
-                    print("\(handPosePrediction.label)")
-                }
-                
-            } catch {
-                print(error)
-            }
             
             
         }
