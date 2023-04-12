@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationStack{
             ZStack(alignment: .center) {
@@ -62,7 +63,8 @@ struct ContentView: View {
                             
                         }
                     }
-                    
+                  
+          
                 }
                 
             }
@@ -70,6 +72,7 @@ struct ContentView: View {
         }
         .navigationTitle("Home")
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
