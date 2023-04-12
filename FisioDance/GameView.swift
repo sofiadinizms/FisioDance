@@ -18,6 +18,7 @@ import ARKit
 struct GameView : View {
     
     @ObservedObject var arViewModel : ARViewModel = ARViewModel()
+    @ObservedObject var settings =  Settings.shared
     
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var selectedSecs = 20
@@ -41,19 +42,22 @@ struct GameView : View {
     private let serialQueue = DispatchQueue(label: "com.aboveground.dispatchqueueml")
     private var visionRequests = [VNRequest]()
     
+    let feedbackImages: [String] = ["incrivel", "vamosla", "maisuma", "show"]
+    
     
     var body: some View {
         
-        NavigationStack{
+        NavigationStack(){
             
             ZStack{
                 ARViewContainer(arViewModel: arViewModel).edgesIgnoringSafeArea(.all)
+                
                 
                 Image("background")
                     .position(x:980, y: 390)
                 VStack{
                     
-                    Text("\(self.selectedSecs)")
+                    Text("\(self.selectedSecs), \(settings.result)")
                         .onReceive(timer){_ in
                             self.selectedSecs += 1
                             
@@ -64,7 +68,7 @@ struct GameView : View {
                             }
                             
                             if self.selectedSecs == blueSecs + 5 {
-                                withAnimation(.easeIn(duration: 0.5)){self.turn += 1}
+                                withAnimation(.easeIn(duration: 0.3)){self.turn += 1}
                             }
                             
                         }
@@ -109,7 +113,7 @@ struct GameView : View {
                             
                             GifImage(exercises[4].onImage)
                                 .opacity((turn >= exercises[4].name ? 1.0 : 0.0))
-
+                            
                             GifImage(exercises[5].onImage)
                                 .opacity((turn >= exercises[5].name ? 1.0 : 0.0))
                             
@@ -121,62 +125,45 @@ struct GameView : View {
                             
                             GifImage(exercises[8].onImage)
                                 .opacity((turn >= exercises[8].name ? 1.0 : 0.0))
-                                            
+                            
                             
                             
                         }.position(x:-347, y: 170)
                             .frame(width: 220, height: 220)
                         
+                        if settings.result == "Open Hand", turn == 1 {
+                            Image(feedbackImages[0])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        } else if settings.result == "Wrong hand", turn == 2 {
+                            Image(feedbackImages[1])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        } else if settings.result == "Open Hand", turn == 3 {
+                            Image(feedbackImages[2])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        } else if settings.result == "Open Hand", turn == 4 {
+                            Image(feedbackImages[3])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        }
                         
-                        //                        switch turn{
-                        //                        case 0:
-                        //                            Image("a-off")
-                        //                        case 1:
-                        //                            GifImage(exercises[0].onImage)
-                        //                                .position(x:-347, y: 170)
-                        //                                .frame(width: 220, height: 220)
-                        //                        case 2:
-                        //                            GifImage(exercises[1].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 3:
-                        //                            GifImage(exercises[2].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 4:
-                        //                            GifImage(exercises[3].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 5:
-                        //                            GifImage(exercises[4].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 6:
-                        //                            GifImage(exercises[5].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 7:
-                        //                            GifImage(exercises[6].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 8:
-                        //                            GifImage(exercises[7].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        case 9:
-                        //                            GifImage(exercises[8].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        default:
-                        //                            GifImage(exercises[0].onImage)
-                        //                                .position(x:-360, y: 160)
-                        //                                .frame(width: 200, height: 200)
-                        //                        }
+                        
                     }
                     
                 }
                 
+                if turn == 0 {
+                    EndGameView()
+                }
+                
             }
+            
         }
         
         

@@ -10,10 +10,14 @@ import Foundation
 import RealityKit
 import ARKit
 import Vision
+import SwiftUI
 
 
 class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
     @Published private var model : ARModel = ARModel()
+    @ObservedObject var settings =  Settings.shared
+    
+//    public var result: String = "oi"
     
     
     let handModel = try! HandPoseClassifier(configuration: MLModelConfiguration())
@@ -84,6 +88,7 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
                     
                     if confidence > 0.8 {
                         print("\(handPosePrediction.label)")
+                        settings.result = handPosePrediction.label
                     }
                     
                 } catch {
