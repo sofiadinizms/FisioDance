@@ -12,88 +12,93 @@ let feedbackManager = FeedbackManager.shared
 struct ListaDeAtividadesCard: View {
     let exercicio: Exercicios
     var body: some View {
-        ZStack{
-            Image(exercicio.background)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 721,height: 268)
-            HStack {
-                Image(exercicio.image)
+        NavigationStack{
+            ZStack{
+                Image(exercicio.background)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 260,height: 220)
-                
-                Spacer()
-                    .frame(width: 40)
-                
-                
-                VStack{
+                    .frame(width: 721,height: 268)
+                HStack {
+                    Image(exercicio.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 260,height: 220)
+                    
+                    Spacer()
+                        .frame(width: 40)
+                    
+                    
                     VStack{
-                        Text(exercicio.title)
-                            .font(.custom("Jura", size: 32))
-                            .foregroundColor(Color("dark-blue90"))
+                        VStack{
+                            Text(exercicio.title)
+                                .font(.custom("Jura", size: 32))
+                                .foregroundColor(Color("dark-blue90"))
                             //.padding(.trailing, 80)
-                            .frame(width: 362, alignment: .leading)
-                        Text("Duração: \(exercicio.duration)")
-                            .font(.custom("Jura", size: 22))
-                            .foregroundColor(Color("dark-blue90"))
-                            .frame(width: 362, alignment: .leading)
-                        Text(exercicio.subtitle)
-                            .font(.custom("Jura", size: 20))
-                            .foregroundColor(Color("dark-blue90"))
-                            .frame(width: 362, height: 58, alignment: .leading)
-                            .padding(.top, -20)
-                            .lineLimit(2)
-                        
-                    }
-                    .frame(width: 362, height: 140)
-                    .padding(.bottom)
-                    .border(.red)
-                    
-                    
-                    HStack{
-        
-                        Button(action: {
-                            //action here
-                        }){
-                            ZStack{
-                                Image("preview-button")
-                                Text("preview")
-                                    .font(.custom("Jura", size: 28))
-                                    .foregroundColor(Color("dark-blue90"))
-                                    .padding(.bottom)
-                                    .padding(.trailing, 40)
-                                
-                            }
+                                .frame(width: 362, alignment: .leading)
+                            Text("Duração: \(exercicio.duration)")
+                                .font(.custom("Jura", size: 22))
+                                .foregroundColor(Color("dark-blue90"))
+                                .frame(width: 362, alignment: .leading)
+                            Text(exercicio.subtitle)
+                                .font(.custom("Jura", size: 20))
+                                .foregroundColor(Color("dark-blue90"))
+                                .frame(width: 362, height: 58, alignment: .leading)
+                                .padding(.top, -20)
+                                .lineLimit(2)
+                            
                         }
-                        Spacer()
+                        .frame(width: 362, height: 140)
+                        .padding(.bottom)
                         
-                            ZStack {
-                                if feedbackManager.emojiToInt?.emoji != "" {
-                                    Image("fav-icon")
+                        
+                        
+                        HStack{
+                            
+                            Button(action: {
+                                //action here
+                            }){
+                                NavigationLink(destination: GameView()){
+                                    ZStack{
+                                        Image("preview-button")
+                                        Text("vamos lá")
+                                            .font(.custom("Jura", size: 28))
+                                            .foregroundColor(Color("dark-blue90"))
+                                            .padding(.bottom)
+                                            .padding(.trailing, 40)
+                                        
+                                    }
                                 }
+                            }
+                            Spacer()
+                            
+                            ZStack {
+                                if feedbackManager.emojiToInt?.emoji == "" {
+                                    Image("fav-icon")
+                                } 
                                 
                                 Text(feedbackManager.emojiToInt?.emoji ?? "")
                                     .padding(.bottom, 5)
                                     .padding(.trailing,5)
                                     .font(.custom("Jura", size: 26))
                             } .padding(.bottom,7)
-                        //}
-                       
+                            //}
+                            
+                        }
+                        .frame(height: 70)
+                        .padding(.bottom)
                     }
-                    .frame(height: 70)
+                    .frame(width: 362,height: 225, alignment: .leading)
+                    //.border(.black)
+                    
                 }
-                .frame(width: 362,height: 225, alignment: .leading)
-                //.border(.black)
+                .padding(.leading,32)
+                .padding(.trailing,34)
+                .padding(.top,32)
+                .padding(.bottom,34)
                 
             }
-            .padding(.leading,32)
-            .padding(.trailing,34)
-            .padding(.top,32)
-            .padding(.bottom,34)
             
         }
-        
     }
 }
 

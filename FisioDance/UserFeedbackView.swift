@@ -96,7 +96,7 @@ struct FeedbackButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(selectedEmoji == emoji ? Color.blue : Color.gray)
+            .background(selectedEmoji == emoji ? Color("dark-blue90") : Color("light-blue30"))
             .cornerRadius(10)
     }
 }
