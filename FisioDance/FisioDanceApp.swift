@@ -11,7 +11,7 @@ import SwiftUI
 struct FisioDanceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserFeedbackView()
         }
     }
 }
