@@ -33,9 +33,9 @@ struct ContentView: View {
                                 Image("primary")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 248, height: 80)
+                                    .frame(width: 268, height: 95)
                                 Text("Iniciar")
-                                    .font(.custom("Jura", size: 30))
+                                    .font(.custom("Jura", size: 35))
                                     .bold()
                                     .foregroundColor(.white)
                                     .padding(.bottom, 12)
@@ -49,7 +49,7 @@ struct ContentView: View {
                         NavigationLink(destination: HelpView()){
                             ZStack{
                                 Text("Ajuda")
-                                    .font(.custom("Jura", size: 27))
+                                    .font(.custom("Jura", size: 30))
                                     .bold()
                                     .foregroundColor(.white)
                                     .padding(.bottom, 10)
@@ -57,7 +57,7 @@ struct ContentView: View {
                                 Image("secondary")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 248, height: 80)
+                                    .frame(width: 268, height: 100)
                             }
                             
                         }
