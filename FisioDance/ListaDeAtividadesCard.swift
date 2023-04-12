@@ -72,11 +72,11 @@ struct ListaDeAtividadesCard: View {
                             Spacer()
                             
                             ZStack {
-                                if feedbackManager.emojiToInt?.emoji == "" {
+                                if exercicio.emoji != "" {
                                     Image("fav-icon")
                                 } 
                                 
-                                Text(feedbackManager.emojiToInt?.emoji ?? "")
+                                Text(exercicio.emoji)
                                     .padding(.bottom, 5)
                                     .padding(.trailing,5)
                                     .font(.custom("Jura", size: 26))

@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationStack{
 
             VStack {
-                NavigationLink(destination: GamesListView()){
+                NavigationLink(destination: ListaDeAtividades()){
                     Text("Play")
                         .padding(20)
                 }
