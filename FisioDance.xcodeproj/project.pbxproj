@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD81800129E7A70500123540 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = BD81800029E7A70500123540 /* .gitattributes */; };
 		BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */; };
 		BD8F94A329C8A00800394BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A229C8A00800394BD3 /* ContentView.swift */; };
 		BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94A429C8A00900394BD3 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD81800029E7A70500123540 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		BD8F949D29C8A00800394BD3 /* FisioDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisioDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisioDanceApp.swift; sourceTree = "<group>"; };
 		BD8F94A229C8A00800394BD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		BD8F949429C8A00800394BD3 = {
 			isa = PBXGroup;
 			children = (
+				BD81800029E7A70500123540 /* .gitattributes */,
 				BD8F949F29C8A00800394BD3 /* FisioDance */,
 				BD8F949E29C8A00800394BD3 /* Products */,
 			);
@@ -162,6 +165,7 @@
 				BD8F94A829C8A00900394BD3 /* Preview Assets.xcassets in Resources */,
 				BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */,
 				BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */,
+				BD81800129E7A70500123540 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
