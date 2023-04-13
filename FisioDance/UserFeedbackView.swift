@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Feedback: Int, CaseIterable {
+enum EmojiToInt: Int, CaseIterable {
     case impossible = 1
     case hard = 2
     case neutral = 3
@@ -28,20 +28,35 @@ enum Feedback: Int, CaseIterable {
             return "😍"
         }
     }
+    
+    
+}
+
+class Feedback {
+   // var emojiToInt = EmojiToInt()
+    var exerciseToEmoji: [String: String] = ["Vamos Aquecer": "",
+                                             "Alongamento simples": ""]
 }
 
 class FeedbackManager {
     static let shared = FeedbackManager()
     
-    var feedback: Feedback? {
+    var emojiToInt: EmojiToInt? {
         let defaults = UserDefaults.standard
-        let feedbackValue = defaults.integer(forKey: "feedback")
-        return Feedback(rawValue: feedbackValue)
+        let emojiToIntValue = defaults.integer(forKey: "emojiToInt")
+        return EmojiToInt(rawValue: emojiToIntValue)
+    }
+    
+    var feedbackRepresentable: Feedback? {
+        let defaults = UserDefaults.standard
+        let feedbackDictionary = defaults.dictionary(forKey: "feedbackRepresentable")
+        return Feedback()
     }
 }
 
 struct UserFeedbackView: View {
-    @State private var selectedFeedback = Feedback.neutral
+    @State private var selectedEmoji = EmojiToInt.neutral
+    @State private var selectedExercise = "Vamos Aquecer"
     
     var body: some View {
         VStack {
@@ -51,15 +66,15 @@ struct UserFeedbackView: View {
 //                .foregroundColor(Color("dark-blue90"))
             
             HStack {
-                ForEach(Feedback.allCases, id: \.self) { feedback in
+                ForEach(EmojiToInt.allCases, id: \.self) { emojiToInt in
                     Button(action: {
-                        self.selectedFeedback = feedback
+                        self.selectedEmoji = emojiToInt
                         saveFeedback()
                     }) {
-                        Text(feedback.emoji)
+                        Text(emojiToInt.emoji)
                             .font(.largeTitle)
                     }
-                    .buttonStyle(FeedbackButtonStyle(selectedFeedback: self.selectedFeedback, feedback: feedback))
+                    .buttonStyle(FeedbackButtonStyle(selectedEmoji: self.selectedEmoji, emoji: emojiToInt))
                 }
             }
             
@@ -69,18 +84,19 @@ struct UserFeedbackView: View {
     
     func saveFeedback() {
         let defaults = UserDefaults.standard
-        defaults.set(selectedFeedback.rawValue, forKey: "feedback")
+        defaults.set(selectedEmoji.rawValue, forKey: "emojiToInt")
+        defaults.set(selectedExercise, forKey: "feedbackRepresentable")
     }
 }
 
 struct FeedbackButtonStyle: ButtonStyle {
-    let selectedFeedback: Feedback
-    let feedback: Feedback
+    let selectedEmoji: EmojiToInt
+    let emoji: EmojiToInt
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(selectedFeedback == feedback ? Color("dark-blue90") : Color("light-blue20"))
+            .background(selectedEmoji == emoji ? Color("dark-blue90") : Color("light-blue30"))
             .cornerRadius(10)
     }
 }

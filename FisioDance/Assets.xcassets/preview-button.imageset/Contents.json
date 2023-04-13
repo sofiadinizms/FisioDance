@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "home-screen.png",
+      "filename" : "preview-button.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Home-screen@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Home-screen@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

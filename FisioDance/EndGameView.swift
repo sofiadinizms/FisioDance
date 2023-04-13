@@ -12,21 +12,14 @@ struct EndGameView: View {
         NavigationStack{
             ZStack{
                 
-                Rectangle()
-                    .foregroundColor(Color("light-blue10"))
-                    .cornerRadius(12)
-                    .frame(width: 725, height: 763, alignment: .center)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color("dark-blue90"), lineWidth: 2)
-                    )
+                Image("end-game")
                 
                 
                 VStack{
                     Image("Mask group")
                     VStack{
                         HStack{
-                            Text("Nome da Conduta")
+                            Text("Alongamento simples")
                                 .foregroundColor(Color("dark-blue90"))
                                 .font(.custom("Jura", size: 39))
                         }
@@ -55,24 +48,22 @@ struct EndGameView: View {
                                 //action here
                             }) {
                                 NavigationLink(destination: GameView()){
-                                    HStack {
+                                    ZStack {
+                                        Image("repeat-button")
+                                        
                                         Text("Repetir")
-                                        Image(systemName: "gobackward")
-                                            .padding()
+                                            .font(.custom("Jura", size: 30))
+                                            .bold()
+                                            .foregroundColor(Color("dark-blue90"))
+                                            .padding(.bottom, 10)
+                                            .padding(.trailing, 30)
+                                        
                                         
                                     }
                                 }
                             }
                             
-                            .buttonStyle(.borderedProminent)
-                            .tint(Color("light-blue10"))
-                            .cornerRadius(12)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color("dark-blue90"), lineWidth: 2))
-                            .foregroundColor(Color("dark-blue90"))
-                            .font(.custom("Jura", size: 15))
-                            .foregroundColor(Color("dark-blue90"))
+                            
                             
                             Spacer()
                             
@@ -80,27 +71,24 @@ struct EndGameView: View {
                                 //action here
                             }) {
                                 NavigationLink(destination: GamesListView()){
-                                    HStack {
+                                    ZStack {
+                                        Image("menu-button")
+                                        
                                         Text("Menu")
-                                        Image(systemName: "list.bullet")
-                                            .padding()
+                                            .font(.custom("Jura", size: 30))
+                                            .bold()
+                                            .foregroundColor(Color("dark-blue90"))
+                                            .padding(.bottom, 15)
+                                            .padding(.trailing, 35)
                                         
                                         
                                     }
                                 }
                             }
-                            .buttonStyle(.borderedProminent)
-                            .tint(Color("light-blue30"))
-                            .cornerRadius(12)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color("dark-blue90"), lineWidth: 2))
-                            .font(.custom("Jura", size: 15))
-                            .foregroundColor(Color("dark-blue90"))
                             
                             
                         }
-                        .frame(width:665,height: 70)
+                        //.frame(width:665,height: 70)
                         
                         
                     }

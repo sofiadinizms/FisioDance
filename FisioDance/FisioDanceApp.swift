@@ -11,7 +11,8 @@ import SwiftUI
 struct FisioDanceApp: App {
     var body: some Scene {
         WindowGroup {
-            UserFeedbackView()
+            ListaDeAtividades()
         }
     }
 }
+
