@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD817FCF29E3D70600123540 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FC529E3D58D00123540 /* ARModel.swift */; };
+		BD817FD029E3D72000123540 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCA29E3D58D00123540 /* ExerciseModel.swift */; };
+		BD817FD129E3D72000123540 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCB29E3D58D00123540 /* GifImage.swift */; };
+		BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCC29E3D58D00123540 /* AppDelegate.swift */; };
+		BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FCE29E3D58D00123540 /* ARViewModel.swift */; };
+		BD817FF129E6F59B00123540 /* a.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FE829E6F59B00123540 /* a.gif */; };
+		BD817FF229E6F59B00123540 /* b.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FE929E6F59B00123540 /* b.gif */; };
+		BD817FF329E6F59B00123540 /* h.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FEA29E6F59B00123540 /* h.gif */; };
+		BD817FF429E6F59B00123540 /* i.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FEB29E6F59B00123540 /* i.gif */; };
+		BD817FF529E6F59B00123540 /* f.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FEC29E6F59B00123540 /* f.gif */; };
+		BD817FF629E6F59B00123540 /* c.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FED29E6F59B00123540 /* c.gif */; };
+		BD817FF729E6F59B00123540 /* g.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FEE29E6F59B00123540 /* g.gif */; };
+		BD817FF829E6F59B00123540 /* e.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FEF29E6F59B00123540 /* e.gif */; };
+		BD817FF929E6F59B00123540 /* d.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FF029E6F59B00123540 /* d.gif */; };
+		BD817FFB29E6FF2F00123540 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FFA29E6FF2F00123540 /* Settings.swift */; };
+		BD817FFD29E73AC600123540 /* HandPoseClassifierComplete.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */; };
 		BD81800129E7A70500123540 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = BD81800029E7A70500123540 /* .gitattributes */; };
 		BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */; };
 		BD8F94A329C8A00800394BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A229C8A00800394BD3 /* ContentView.swift */; };
@@ -17,12 +33,30 @@
 		BD8F94B529C8A74E00394BD3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94B429C8A74E00394BD3 /* GameView.swift */; };
 		BD8F94B729C8A7A400394BD3 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94B629C8A7A400394BD3 /* EndGameView.swift */; };
 		BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */; };
+		BD98DB9729E278AA0073C2AA /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9629E278AA0073C2AA /* Classifier.swift */; };
+		BD98DB9929E27C3A0073C2AA /* HandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */; };
 		FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */; };
 		FCE8E5B029E5A8E20059031F /* ListaDeAtividadesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */; };
 		FCE8E5B229E5A9880059031F /* ListaDeAtividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD817FC529E3D58D00123540 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		BD817FCA29E3D58D00123540 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		BD817FCB29E3D58D00123540 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		BD817FCC29E3D58D00123540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD817FCE29E3D58D00123540 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		BD817FE829E6F59B00123540 /* a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = a.gif; sourceTree = "<group>"; };
+		BD817FE929E6F59B00123540 /* b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b.gif; sourceTree = "<group>"; };
+		BD817FEA29E6F59B00123540 /* h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = h.gif; sourceTree = "<group>"; };
+		BD817FEB29E6F59B00123540 /* i.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = i.gif; sourceTree = "<group>"; };
+		BD817FEC29E6F59B00123540 /* f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = f.gif; sourceTree = "<group>"; };
+		BD817FED29E6F59B00123540 /* c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = c.gif; sourceTree = "<group>"; };
+		BD817FEE29E6F59B00123540 /* g.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = g.gif; sourceTree = "<group>"; };
+		BD817FEF29E6F59B00123540 /* e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = e.gif; sourceTree = "<group>"; };
+		BD817FF029E6F59B00123540 /* d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = d.gif; sourceTree = "<group>"; };
+		BD817FFA29E6FF2F00123540 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifierComplete.mlmodel; sourceTree = "<group>"; };
 		BD81800029E7A70500123540 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		BD8F949D29C8A00800394BD3 /* FisioDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisioDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisioDanceApp.swift; sourceTree = "<group>"; };
@@ -35,6 +69,8 @@
 		BD8F94B629C8A7A400394BD3 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 		BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jura-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		BD8F94C429D45E2900394BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD98DB9629E278AA0073C2AA /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifier.mlmodel; sourceTree = "<group>"; };
 		FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackView.swift; sourceTree = "<group>"; };
 		FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeAtividadesCard.swift; sourceTree = "<group>"; };
 		FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeAtividades.swift; sourceTree = "<group>"; };
@@ -75,13 +111,32 @@
 				BD8F94C029D45D2B00394BD3 /* font */,
 				BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */,
 				BD8F94B229C8A61A00394BD3 /* HelpView.swift */,
+				BD98DB9629E278AA0073C2AA /* Classifier.swift */,
 				BD8F94A229C8A00800394BD3 /* ContentView.swift */,
 				BD8F94B029C8A47B00394BD3 /* GamesListView.swift */,
 				FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */,
 				FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */,
 				BD8F94B429C8A74E00394BD3 /* GameView.swift */,
 				BD8F94B629C8A7A400394BD3 /* EndGameView.swift */,
+				BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */,
+				BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */,
+				BD8F94B429C8A74E00394BD3 /* GameView.swift */,
+				BD817FC529E3D58D00123540 /* ARModel.swift */,
+				BD817FCE29E3D58D00123540 /* ARViewModel.swift */,
+				BD817FCA29E3D58D00123540 /* ExerciseModel.swift */,
+				BD817FFA29E6FF2F00123540 /* Settings.swift */,
+				BD817FCB29E3D58D00123540 /* GifImage.swift */,
+				BD817FCC29E3D58D00123540 /* AppDelegate.swift */,
 				BD8F94A429C8A00900394BD3 /* Assets.xcassets */,
+				BD817FE829E6F59B00123540 /* a.gif */,
+				BD817FE929E6F59B00123540 /* b.gif */,
+				BD817FED29E6F59B00123540 /* c.gif */,
+				BD817FF029E6F59B00123540 /* d.gif */,
+				BD817FEF29E6F59B00123540 /* e.gif */,
+				BD817FEC29E6F59B00123540 /* f.gif */,
+				BD817FEE29E6F59B00123540 /* g.gif */,
+				BD817FEA29E6F59B00123540 /* h.gif */,
+				BD817FEB29E6F59B00123540 /* i.gif */,
 				FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */,
 				BD8F94A629C8A00900394BD3 /* Preview Content */,
 			);
@@ -162,9 +217,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD817FF829E6F59B00123540 /* e.gif in Resources */,
+				BD817FF729E6F59B00123540 /* g.gif in Resources */,
+				BD817FF629E6F59B00123540 /* c.gif in Resources */,
+				BD817FF229E6F59B00123540 /* b.gif in Resources */,
 				BD8F94A829C8A00900394BD3 /* Preview Assets.xcassets in Resources */,
 				BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */,
+				BD817FF329E6F59B00123540 /* h.gif in Resources */,
+				BD817FF429E6F59B00123540 /* i.gif in Resources */,
+				BD817FF129E6F59B00123540 /* a.gif in Resources */,
+				BD817FF929E6F59B00123540 /* d.gif in Resources */,
 				BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */,
+				BD817FF529E6F59B00123540 /* f.gif in Resources */,
 				BD81800129E7A70500123540 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,12 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD98DB9729E278AA0073C2AA /* Classifier.swift in Sources */,
+				BD98DB9929E27C3A0073C2AA /* HandPoseClassifier.mlmodel in Sources */,
 				BD8F94A329C8A00800394BD3 /* ContentView.swift in Sources */,
 				BD8F94B329C8A61A00394BD3 /* HelpView.swift in Sources */,
+				BD817FFD29E73AC600123540 /* HandPoseClassifierComplete.mlmodel in Sources */,
+				BD817FFB29E6FF2F00123540 /* Settings.swift in Sources */,
+				BD817FCF29E3D70600123540 /* ARModel.swift in Sources */,
 				BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */,
 				FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */,
 				FCE8E5B029E5A8E20059031F /* ListaDeAtividadesCard.swift in Sources */,
 				BD8F94B129C8A47B00394BD3 /* GamesListView.swift in Sources */,
+				BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */,
+				BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */,
+				BD817FD029E3D72000123540 /* ExerciseModel.swift in Sources */,
+				BD817FD129E3D72000123540 /* GifImage.swift in Sources */,
 				BD8F94B729C8A7A400394BD3 /* EndGameView.swift in Sources */,
 				BD8F94B529C8A74E00394BD3 /* GameView.swift in Sources */,
 				FCE8E5B229E5A9880059031F /* ListaDeAtividades.swift in Sources */,
@@ -241,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -317,11 +390,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FisioDance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = arkit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +403,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sofia.FisioDance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,11 +424,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FisioDance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = arkit;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +437,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sofia.FisioDance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

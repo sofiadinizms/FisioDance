@@ -15,9 +15,9 @@ struct GamesListView: View {
                     Text("Voltar para Home")
                         .padding(20)
                 }
-                NavigationLink(destination: GameView()){
-                    Text("Jogar (selecionou o exercício)")
-                }
+//                NavigationLink(destination: GameView()){
+//                    Text("Jogar (selecionou o exercício)")
+//                }
             }
 
             
