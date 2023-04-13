@@ -21,7 +21,7 @@ struct GameView : View {
     @ObservedObject var settings =  Settings.shared
     
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State private var selectedSecs = 20
+    @State private var selectedSecs = 29
     
     @State private var opacityAnim = 1.0
     @State private var exercises: [Exercise] = [
@@ -43,6 +43,7 @@ struct GameView : View {
     private var visionRequests = [VNRequest]()
     
     let feedbackImages: [String] = ["incrivel", "vamosla", "maisuma", "show"]
+
     
     
     
@@ -63,7 +64,7 @@ struct GameView : View {
                         .onReceive(timer){_ in
                             self.selectedSecs += 1
                             
-                            if self.selectedSecs % 25 == 0{
+                            if self.selectedSecs % 10 == 0{
                                 withAnimation(.easeIn(duration: 5.0)){self.yellowTurn += 1}
                                 blueSecs = self.selectedSecs
                                 
@@ -177,6 +178,9 @@ struct GameView : View {
                 }
                 
             }
+//            .onAppear(){
+//                playSoundtrack(sound: "sunny")
+//            }
             
         }.navigationBarHidden(true)
         

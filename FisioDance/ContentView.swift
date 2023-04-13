@@ -71,6 +71,7 @@ struct ContentView: View {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         }
         .navigationTitle("Home")
+        .navigationBarHidden(true)
     }
     
 }

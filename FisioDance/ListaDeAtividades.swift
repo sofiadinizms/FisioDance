@@ -102,8 +102,11 @@ struct ListaDeAtividades: View {
                 .frame(height: 556)
                 .offset(y: 50)
             }
+            .onAppear() {
+                stopSoundtrack(sound: "sunny")
+            }
             
-        }
+        }.navigationBarHidden(true)
     }
 }
 
