@@ -20,7 +20,7 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
 //    public var result: String = "oi"
     
     
-    let handModel = try! HandPoseClassifier(configuration: MLModelConfiguration())
+    let handModel = try! HandPoseClassifierComplete(configuration: MLModelConfiguration())
     
     var frameCount: Int = 0
     

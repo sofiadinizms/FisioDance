@@ -29,7 +29,7 @@ struct GameView : View {
         Exercise(name: 2, duration: 10, position: 1300, offImage: UIImage(named:"b-off" )!, onImage: "b"),
         Exercise(name: 3, duration: 10, position: 1300, offImage: UIImage(named:"c-off" )!, onImage: "c"),
         Exercise(name: 4, duration: 10, position: 1300, offImage: UIImage(named:"d-off" )!, onImage: "d"),
-        Exercise(name: 5, duration: 10, position: 1300, offImage: UIImage(named:"e-off" )!, onImage: "e"),
+        Exercise(name: 5, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
         Exercise(name: 6, duration: 10, position: 1300, offImage: UIImage(named:"f-off" )!, onImage: "f"),
         Exercise(name: 7, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
         Exercise(name: 8, duration: 10, position: 1300, offImage: UIImage(named:"h-off" )!, onImage: "h"),
@@ -131,22 +131,32 @@ struct GameView : View {
                         }.position(x:-347, y: 170)
                             .frame(width: 220, height: 220)
                         
-                        if settings.result == "Open Hand", turn == 1 {
+                        if settings.result == "Open pray hand", turn == 1 {
                             Image(feedbackImages[0])
                                 .frame(width: 20, height: 10)
                                 .rotationEffect(.degrees(25))
                                 .position(x: 950, y: -280)
-                        } else if settings.result == "Wrong hand", turn == 2 {
+                        } else if settings.result == "Closed hand", turn == 2 {
                             Image(feedbackImages[1])
                                 .frame(width: 20, height: 10)
                                 .rotationEffect(.degrees(25))
                                 .position(x: 950, y: -280)
-                        } else if settings.result == "Open Hand", turn == 3 {
+                        } else if settings.result == "Open hand", turn == 3 {
                             Image(feedbackImages[2])
                                 .frame(width: 20, height: 10)
                                 .rotationEffect(.degrees(25))
                                 .position(x: 950, y: -280)
-                        } else if settings.result == "Open Hand", turn == 4 {
+                        } else if settings.result == "Closed hand", turn == 4 {
+                            Image(feedbackImages[3])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        } else if settings.result == "Open pray hand", turn == 5 {
+                            Image(feedbackImages[3])
+                                .frame(width: 20, height: 10)
+                                .rotationEffect(.degrees(25))
+                                .position(x: 950, y: -280)
+                        } else if settings.result == "Closed pray hand", turn == 6 {
                             Image(feedbackImages[3])
                                 .frame(width: 20, height: 10)
                                 .rotationEffect(.degrees(25))
@@ -158,7 +168,7 @@ struct GameView : View {
                     
                 }
                 
-                if turn == 0 {
+                if turn == 7 {
                     EndGameView()
                 }
                 
