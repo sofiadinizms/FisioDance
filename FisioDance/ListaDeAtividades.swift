@@ -45,7 +45,7 @@ struct ListaDeAtividades: View {
             ZStack(alignment: .center) {
                 
                 GeometryReader { geo in
-                    Image("Level-screen")
+                    Image("level-screen")
                         .resizable()
                         .scaledToFill()
                         .scaleEffect(1.04)
@@ -58,7 +58,7 @@ struct ListaDeAtividades: View {
                     }) {
                         NavigationLink(destination: ContentView()){
                             Image("only-icon-primary-1")
-                           
+                            
                         }
                     }
                     Spacer()
@@ -73,7 +73,7 @@ struct ListaDeAtividades: View {
                         
                     }) {
                         Image("only-icon-primary")
-                            
+                        
                     }
                     
                 }

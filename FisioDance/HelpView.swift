@@ -129,10 +129,10 @@ struct HelpItems: Identifiable, Hashable {
 extension HelpItems {
     static var exampleData: [HelpItems] {
         [
-            .init(name: "Tela de início", details: "", image: UIImage(imageLiteralResourceName: "home-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
-            .init(name: "Escolha de exercícios", details: "", image: UIImage(imageLiteralResourceName: "level-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
-            .init(name: "Tela de jogo", details: "", image: UIImage(imageLiteralResourceName: "play-screen"), image2: UIImage(imageLiteralResourceName: "gambiarra"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
-            .init(name: "Fim de jogo", details: "", image: UIImage(imageLiteralResourceName: "start-game"), image2: UIImage(imageLiteralResourceName: "exit-game"), image3: UIImage(imageLiteralResourceName: "end-game")),
+            .init(name: "Tela de início", details: "", image: UIImage(imageLiteralResourceName: "start"), image2: UIImage(imageLiteralResourceName: "start"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Escolha de exercícios", details: "", image: UIImage(imageLiteralResourceName: "list"), image2: UIImage(imageLiteralResourceName: "list"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Tela de jogo", details: "", image: UIImage(imageLiteralResourceName: "play"), image2: UIImage(imageLiteralResourceName: "play"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
+            .init(name: "Fim de jogo", details: "", image: UIImage(imageLiteralResourceName: "end"), image2: UIImage(imageLiteralResourceName: "end"), image3: UIImage(imageLiteralResourceName: "gambiarra")),
         ]
     }
 }

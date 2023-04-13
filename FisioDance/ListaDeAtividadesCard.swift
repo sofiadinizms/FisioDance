@@ -74,7 +74,7 @@ struct ListaDeAtividadesCard: View {
                             ZStack {
                                 if exercicio.emoji != "" {
                                     Image("fav-icon")
-                                } 
+                                }
                                 
                                 Text(exercicio.emoji)
                                     .padding(.bottom, 5)

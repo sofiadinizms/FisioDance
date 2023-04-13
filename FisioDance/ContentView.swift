@@ -13,7 +13,7 @@ struct ContentView: View {
             ZStack(alignment: .center) {
                 
                 GeometryReader { geo in
-                    Image("Home-screen")
+                    Image("home-screen")
                         .resizable()
                         .scaledToFill()
                         .scaleEffect(1.04)
@@ -29,7 +29,7 @@ struct ContentView: View {
                     Button(action: {
                         
                     }) {
-                        NavigationLink(destination: GamesListView()){
+                        NavigationLink(destination: ListaDeAtividades()){
                             ZStack{
                                 Image("primary")
                                     .resizable()

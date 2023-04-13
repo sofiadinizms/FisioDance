@@ -56,7 +56,6 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
         model.updateHeadTilt()
         frameCount += 1
         
-        
         if frameCount % 5 == 0 {
             let pixelBuffer = frame.capturedImage
             

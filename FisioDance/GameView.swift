@@ -28,12 +28,12 @@ struct GameView : View {
         Exercise(name: 1, duration: 10, position: 1300, offImage: UIImage(named:"a-off" )!, onImage: "a"),
         Exercise(name: 2, duration: 10, position: 1300, offImage: UIImage(named:"b-off" )!, onImage: "b"),
         Exercise(name: 3, duration: 10, position: 1300, offImage: UIImage(named:"c-off" )!, onImage: "c"),
-        Exercise(name: 4, duration: 10, position: 1300, offImage: UIImage(named:"d-off" )!, onImage: "d"),
-        Exercise(name: 5, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
-        Exercise(name: 6, duration: 10, position: 1300, offImage: UIImage(named:"f-off" )!, onImage: "f"),
-        Exercise(name: 7, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
-        Exercise(name: 8, duration: 10, position: 1300, offImage: UIImage(named:"h-off" )!, onImage: "h"),
-        Exercise(name: 9, duration: 10, position: 1300, offImage: UIImage(named:"i-off" )!, onImage: "i")
+        Exercise(name: 4, duration: 10, position: 1300, offImage: UIImage(named:"d-off" )!, onImage: "d")
+//        Exercise(name: 5, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
+//        Exercise(name: 6, duration: 10, position: 1300, offImage: UIImage(named:"f-off" )!, onImage: "f"),
+//        Exercise(name: 7, duration: 10, position: 1300, offImage: UIImage(named:"g-off" )!, onImage: "g"),
+//        Exercise(name: 8, duration: 10, position: 1300, offImage: UIImage(named:"h-off" )!, onImage: "h"),
+//        Exercise(name: 9, duration: 10, position: 1300, offImage: UIImage(named:"i-off" )!, onImage: "i")
     ]
     @State private var turn = 0
     @State private var yellowTurn = 0
@@ -43,6 +43,8 @@ struct GameView : View {
     private var visionRequests = [VNRequest]()
     
     let feedbackImages: [String] = ["incrivel", "vamosla", "maisuma", "show"]
+    
+    
     
     
     var body: some View {
@@ -57,7 +59,7 @@ struct GameView : View {
                     .position(x:980, y: 390)
                 VStack{
                     
-                    Text("\(self.selectedSecs), \(settings.result)")
+                    Text("")
                         .onReceive(timer){_ in
                             self.selectedSecs += 1
                             
@@ -73,7 +75,7 @@ struct GameView : View {
                             
                         }
                         .foregroundColor(arViewModel.tiltLeft ? .green : .secondary)
-                    NavigationLink(destination: GamesListView()) {
+                    NavigationLink(destination: ListaDeAtividades()) {
                         Image("back-button")
                             .position(x:70, y: 30)
                     }
@@ -111,20 +113,20 @@ struct GameView : View {
                             GifImage(exercises[3].onImage)
                                 .opacity((turn >= exercises[3].name ? 1.0 : 0.0))
                             
-                            GifImage(exercises[4].onImage)
-                                .opacity((turn >= exercises[4].name ? 1.0 : 0.0))
+//                            GifImage(exercises[4].onImage)
+//                                .opacity((turn >= exercises[4].name ? 1.0 : 0.0))
                             
-                            GifImage(exercises[5].onImage)
-                                .opacity((turn >= exercises[5].name ? 1.0 : 0.0))
-                            
-                            GifImage(exercises[6].onImage)
-                                .opacity((turn >= exercises[6].name ? 1.0 : 0.0))
-                            
-                            GifImage(exercises[7].onImage)
-                                .opacity((turn >= exercises[7].name ? 1.0 : 0.0))
-                            
-                            GifImage(exercises[8].onImage)
-                                .opacity((turn >= exercises[8].name ? 1.0 : 0.0))
+//                            GifImage(exercises[5].onImage)
+//                                .opacity((turn >= exercises[5].name ? 1.0 : 0.0))
+//
+//                            GifImage(exercises[6].onImage)
+//                                .opacity((turn >= exercises[6].name ? 1.0 : 0.0))
+//
+//                            GifImage(exercises[7].onImage)
+//                                .opacity((turn >= exercises[7].name ? 1.0 : 0.0))
+//
+//                            GifImage(exercises[8].onImage)
+//                                .opacity((turn >= exercises[8].name ? 1.0 : 0.0))
                             
                             
                             
@@ -151,30 +153,32 @@ struct GameView : View {
                                 .frame(width: 20, height: 10)
                                 .rotationEffect(.degrees(25))
                                 .position(x: 950, y: -280)
-                        } else if settings.result == "Open pray hand", turn == 5 {
-                            Image(feedbackImages[3])
-                                .frame(width: 20, height: 10)
-                                .rotationEffect(.degrees(25))
-                                .position(x: 950, y: -280)
-                        } else if settings.result == "Closed pray hand", turn == 6 {
-                            Image(feedbackImages[3])
-                                .frame(width: 20, height: 10)
-                                .rotationEffect(.degrees(25))
-                                .position(x: 950, y: -280)
                         }
+//                        } else if settings.result == "Open pray hand", turn == 5 {
+//                            Image(feedbackImages[3])
+//                                .frame(width: 20, height: 10)
+//                                .rotationEffect(.degrees(25))
+//                                .position(x: 950, y: -280)
+//                        } else if settings.result == "Closed pray hand", turn == 6 {
+//                            Image(feedbackImages[3])
+//                                .frame(width: 20, height: 10)
+//                                .rotationEffect(.degrees(25))
+//                                .position(x: 950, y: -280)
+//                        }
                         
                         
                     }
                     
                 }
                 
-                if turn == 7 {
+                if turn == 5 {
+                    Image("level-screen")
                     EndGameView()
                 }
                 
             }
             
-        }
+        }.navigationBarHidden(true)
         
         
     }
