@@ -34,6 +34,7 @@
 		BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94C229D45D6500394BD3 /* Jura-VariableFont_wght.ttf */; };
 		BD98DB9729E278AA0073C2AA /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9629E278AA0073C2AA /* Classifier.swift */; };
 		BD98DB9929E27C3A0073C2AA /* HandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */; };
+		FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		BD8F94C429D45E2900394BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD98DB9629E278AA0073C2AA /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifier.mlmodel; sourceTree = "<group>"; };
+		FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				BD817FEE29E6F59B00123540 /* g.gif */,
 				BD817FEA29E6F59B00123540 /* h.gif */,
 				BD817FEB29E6F59B00123540 /* i.gif */,
+				FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */,
 				BD8F94A629C8A00900394BD3 /* Preview Content */,
 			);
 			path = FisioDance;
@@ -234,6 +237,7 @@
 				BD817FFB29E6FF2F00123540 /* Settings.swift in Sources */,
 				BD817FCF29E3D70600123540 /* ARModel.swift in Sources */,
 				BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */,
+				FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */,
 				BD8F94B129C8A47B00394BD3 /* GamesListView.swift in Sources */,
 				BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */,
 				BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */,
