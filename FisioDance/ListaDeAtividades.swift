@@ -78,7 +78,7 @@ struct ListaDeAtividades: View {
                     
                 }
                 .padding()
-                .offset(y: -400)
+                .offset(y: -320)
                 
                 HStack(alignment: .center) {
                     ScrollView(.horizontal) {
@@ -100,6 +100,7 @@ struct ListaDeAtividades: View {
                 }
                 //.border(.black)
                 .frame(height: 556)
+                .offset(y: 50)
             }
             
         }
