@@ -23,6 +23,7 @@
 		BD817FF929E6F59B00123540 /* d.gif in Resources */ = {isa = PBXBuildFile; fileRef = BD817FF029E6F59B00123540 /* d.gif */; };
 		BD817FFB29E6FF2F00123540 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD817FFA29E6FF2F00123540 /* Settings.swift */; };
 		BD817FFD29E73AC600123540 /* HandPoseClassifierComplete.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */; };
+		BD81800129E7A70500123540 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = BD81800029E7A70500123540 /* .gitattributes */; };
 		BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */; };
 		BD8F94A329C8A00800394BD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F94A229C8A00800394BD3 /* ContentView.swift */; };
 		BD8F94A529C8A00900394BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F94A429C8A00900394BD3 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 		BD98DB9729E278AA0073C2AA /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9629E278AA0073C2AA /* Classifier.swift */; };
 		BD98DB9929E27C3A0073C2AA /* HandPoseClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */; };
 		FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */; };
+		FCE8E5B029E5A8E20059031F /* ListaDeAtividadesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */; };
+		FCE8E5B229E5A9880059031F /* ListaDeAtividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,7 @@
 		BD817FF029E6F59B00123540 /* d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = d.gif; sourceTree = "<group>"; };
 		BD817FFA29E6FF2F00123540 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifierComplete.mlmodel; sourceTree = "<group>"; };
+		BD81800029E7A70500123540 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		BD8F949D29C8A00800394BD3 /* FisioDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisioDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F94A029C8A00800394BD3 /* FisioDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisioDanceApp.swift; sourceTree = "<group>"; };
 		BD8F94A229C8A00800394BD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		BD98DB9629E278AA0073C2AA /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandPoseClassifier.mlmodel; sourceTree = "<group>"; };
 		FC8D83B529DD9C0400CA9FB4 /* UserFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackView.swift; sourceTree = "<group>"; };
+		FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeAtividadesCard.swift; sourceTree = "<group>"; };
+		FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeAtividades.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		BD8F949429C8A00800394BD3 = {
 			isa = PBXGroup;
 			children = (
+				BD81800029E7A70500123540 /* .gitattributes */,
 				BD8F949F29C8A00800394BD3 /* FisioDance */,
 				BD8F949E29C8A00800394BD3 /* Products */,
 			);
@@ -107,6 +114,9 @@
 				BD98DB9629E278AA0073C2AA /* Classifier.swift */,
 				BD8F94A229C8A00800394BD3 /* ContentView.swift */,
 				BD8F94B029C8A47B00394BD3 /* GamesListView.swift */,
+				FCE8E5AF29E5A8E20059031F /* ListaDeAtividadesCard.swift */,
+				FCE8E5B129E5A9880059031F /* ListaDeAtividades.swift */,
+				BD8F94B429C8A74E00394BD3 /* GameView.swift */,
 				BD8F94B629C8A7A400394BD3 /* EndGameView.swift */,
 				BD98DB9829E27C3A0073C2AA /* HandPoseClassifier.mlmodel */,
 				BD817FFC29E73AC600123540 /* HandPoseClassifierComplete.mlmodel */,
@@ -219,6 +229,7 @@
 				BD817FF929E6F59B00123540 /* d.gif in Resources */,
 				BD8F94C329D45D6500394BD3 /* Jura-VariableFont_wght.ttf in Resources */,
 				BD817FF529E6F59B00123540 /* f.gif in Resources */,
+				BD81800129E7A70500123540 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +249,7 @@
 				BD817FCF29E3D70600123540 /* ARModel.swift in Sources */,
 				BD8F94A129C8A00800394BD3 /* FisioDanceApp.swift in Sources */,
 				FC8D83B629DD9C0400CA9FB4 /* UserFeedbackView.swift in Sources */,
+				FCE8E5B029E5A8E20059031F /* ListaDeAtividadesCard.swift in Sources */,
 				BD8F94B129C8A47B00394BD3 /* GamesListView.swift in Sources */,
 				BD817FD329E3D72700123540 /* ARViewModel.swift in Sources */,
 				BD817FD229E3D72000123540 /* AppDelegate.swift in Sources */,
@@ -245,6 +257,7 @@
 				BD817FD129E3D72000123540 /* GifImage.swift in Sources */,
 				BD8F94B729C8A7A400394BD3 /* EndGameView.swift in Sources */,
 				BD8F94B529C8A74E00394BD3 /* GameView.swift in Sources */,
+				FCE8E5B229E5A9880059031F /* ListaDeAtividades.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
