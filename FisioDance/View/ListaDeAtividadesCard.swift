@@ -12,7 +12,6 @@ let feedbackManager = FeedbackManager.shared
 struct ListaDeAtividadesCard: View {
     let exercicio: Exercicios
     var body: some View {
-        NavigationStack{
             ZStack{
                 Image(exercicio.background)
                     .resizable()
@@ -98,7 +97,6 @@ struct ListaDeAtividadesCard: View {
                 
             }
             
-        }
     }
 }
 

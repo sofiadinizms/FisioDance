@@ -50,7 +50,6 @@ struct GameView : View {
     
     var body: some View {
         
-        NavigationStack(){
             
             ZStack{
                 ARViewContainer(arViewModel: arViewModel).edgesIgnoringSafeArea(.all)
@@ -178,11 +177,9 @@ struct GameView : View {
                 }
                 
             }
-//            .onAppear(){
-//                playSoundtrack(sound: "sunny")
-//            }
-            
-        }.navigationBarHidden(true)
+            .onAppear(){
+                playSoundtrack(sound: "sunny")
+            }.navigationBarHidden(true)
         
         
     }

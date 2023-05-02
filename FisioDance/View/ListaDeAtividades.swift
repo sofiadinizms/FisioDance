@@ -41,7 +41,6 @@ struct ListaDeAtividades: View {
     ]
     
     var body: some View {
-        NavigationStack{
             ZStack(alignment: .center) {
                 
                 GeometryReader { geo in
@@ -105,8 +104,7 @@ struct ListaDeAtividades: View {
             .onAppear() {
                 stopSoundtrack(sound: "sunny")
             }
-            
-        }.navigationBarHidden(true)
+            .navigationBarHidden(true)
     }
 }
 

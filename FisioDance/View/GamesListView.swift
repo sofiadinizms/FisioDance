@@ -9,7 +9,6 @@ import SwiftUI
 
 struct GamesListView: View {
     var body: some View {
-        NavigationStack{
             VStack{
                 NavigationLink(destination: ContentView()){
                     Text("Voltar para Home")
@@ -21,7 +20,6 @@ struct GamesListView: View {
             }
 
             
-        }
         .navigationTitle("Lista de exercícios")
     }
 }

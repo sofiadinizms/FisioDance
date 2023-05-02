@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EndGameView: View {
     var body: some View {
-        NavigationStack{
             ZStack{
                 
                 Image("end-game")
@@ -97,7 +96,6 @@ struct EndGameView: View {
                     
                 }
             }
-        }
         
     }
 }
